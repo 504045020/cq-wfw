@@ -4,6 +4,9 @@ server:
     context-path: /provider
 # ============================= 应用名称 + mysql配置==================================================
 spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
   application:
     name: cloud-payment-service
   datasource:
