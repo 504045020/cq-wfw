@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a97a42-832d-47fd-bdfa-7150c1a7b2a8" name="更改" comment="微服务项目">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cloud-provider-payment8001/src/main/java/com/atguigu/cloud/entities/Pay.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud-provider-payment8001/src/main/java/com/atguigu/cloud/entities/Pay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cloud-provider-payment8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud-provider-payment8001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cloud-provider-payment8001/target/classes/com/atguigu/cloud/entities/Pay.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud-provider-payment8001/target/classes/com/atguigu/cloud/entities/Pay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cloud-provider-payment8001/src/main/java/com/atguigu/cloud/config/ReturnCodeEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718851688155</updated>
-      <workItem from="1718851689133" duration="11391000" />
+      <workItem from="1718851689133" duration="11785000" />
     </task>
     <task id="LOCAL-00001" summary="微服务项目">
       <option name="closed" value="true" />
@@ -135,7 +131,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718869745441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="微服务项目">
+      <option name="closed" value="true" />
+      <created>1718871042481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718871042481</updated>
+    </task>
+    <task id="LOCAL-00003" summary="微服务项目">
+      <option name="closed" value="true" />
+      <created>1718871047722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718871047722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
