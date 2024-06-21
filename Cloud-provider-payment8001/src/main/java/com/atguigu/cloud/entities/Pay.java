@@ -179,6 +179,20 @@ public class Pay {
         return createTime;
     }
 
+    @Override
+    public String toString() {
+        return "Pay{" +
+                "id=" + id +
+                ", payNo='" + payNo + '\'' +
+                ", orderNo='" + orderNo + '\'' +
+                ", userId=" + userId +
+                ", amount=" + amount +
+                ", deleted=" + deleted +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                '}';
+    }
+
     /**
      * 设置创建时间
      *
@@ -205,4 +219,6 @@ public class Pay {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
+
+
 }

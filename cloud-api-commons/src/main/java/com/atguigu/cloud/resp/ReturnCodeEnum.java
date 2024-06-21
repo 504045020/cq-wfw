@@ -1,4 +1,4 @@
-package com.atguigu.cloud.config;
+package com.atguigu.cloud.resp;
 
 
 
@@ -6,7 +6,7 @@ import lombok.Getter;
 
 import java.util.Arrays;
 /**
- * @auther zzyy
+ * @uther chenQi
  * @create 2023-11-04 11:51
  */
 @Getter

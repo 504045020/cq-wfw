@@ -13,6 +13,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Cloud-provider-payment8001" />
         <module name="Mybatis_Generator2024" />
+        <module name="cloud-consumer-order80" />
+        <module name="cloud-api-commons" />
       </profile>
     </annotationProcessing>
   </component>

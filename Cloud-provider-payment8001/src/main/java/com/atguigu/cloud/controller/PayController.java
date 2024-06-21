@@ -1,6 +1,8 @@
 package com.atguigu.cloud.controller;
 
 import com.atguigu.cloud.entities.Pay;
+import com.atguigu.cloud.resp.ResultData;
+import com.atguigu.cloud.resp.ReturnCodeEnum;
 import com.atguigu.cloud.service.PayService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -21,33 +23,33 @@ public class PayController {
 
     @Operation(summary = "新增",description = "新增支付信息,Json作为参数")
     @PostMapping(value = "/add")
-    public String addPay(@RequestBody Pay pay){
+    public ResultData<String> addPay(@RequestBody Pay pay){
         System.out.println(pay.toString());
         int result = payService.add(pay);
-        return "success" + result;
+        return ResultData.success("success" + result);
     }
 
     @DeleteMapping("/{id}")
-    public String deletePay(Integer id){
+    public ResultData<String> deletePay(Integer id){
         int result = payService.delete(id);
-        return "success" + result;
+        return ResultData.success("success" + result);
     }
 
     @PutMapping("/update")
-    public String updatePay(@RequestBody Pay pay){
+    public ResultData<String> updatePay(@RequestBody Pay pay){
         System.out.println(pay.toString());
         int result = payService.update(pay);
-        return "success" + result;
+        return ResultData.success("success" + result);
     }
 
     @GetMapping("/get")
-    public Pay getPayById(Integer id){
-        return payService.getById(id);
+    public ResultData<String> getPayById(Integer id){
+        return ResultData.success("success" + payService.getById(id));
     }
 
     @GetMapping("/list")
-    public List<Pay> getAll(){
-        return payService.getAll();
+    public ResultData<String> getAll(){
+        return ResultData.success("success" + payService.getAll());
     }
 
 
