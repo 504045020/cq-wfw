@@ -1,17 +1,14 @@
 package com.atguigu.cloud.controller;
 
 import com.atguigu.cloud.entities.Pay;
+import com.atguigu.cloud.entities.PayDTO;
 import com.atguigu.cloud.resp.ResultData;
-import com.atguigu.cloud.resp.ReturnCodeEnum;
 import com.atguigu.cloud.service.PayService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
-import jakarta.annotation.Resources;
+import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
-
-import java.lang.annotation.Target;
-import java.util.List;
 
 @Tag(name ="支付模块",description = "支付CURD")
 @RestController
@@ -19,37 +16,29 @@ import java.util.List;
 public class PayController {
 
     @Resource
-    private PayService payService;
+    PayService payService;
 
-    @Operation(summary = "新增",description = "新增支付信息,Json作为参数")
     @PostMapping(value = "/add")
-    public ResultData<String> addPay(@RequestBody Pay pay){
+    public String addPay(@RequestBody Pay pay){
         System.out.println(pay.toString());
-        int result = payService.add(pay);
-        return ResultData.success("success" + result);
+        int i = payService.add(pay);
+        return "成功插入记录，返回值："+i;
+    }
+    @DeleteMapping(value = "/del/{id}")
+    public Integer deletePay(@PathVariable("id") Integer id) {
+        return payService.delete(id);
+    }
+    @PutMapping(value = "/update")
+    public String updatePay(@RequestBody PayDTO payDTO){
+        Pay pay = new Pay();
+        BeanUtils.copyProperties(payDTO, pay);
+        int i = payService.update(pay);
+        return "成功修改记录，返回值："+i;
     }
 
-    @DeleteMapping("/{id}")
-    public ResultData<String> deletePay(Integer id){
-        int result = payService.delete(id);
-        return ResultData.success("success" + result);
-    }
-
-    @PutMapping("/update")
-    public ResultData<String> updatePay(@RequestBody Pay pay){
-        System.out.println(pay.toString());
-        int result = payService.update(pay);
-        return ResultData.success("success" + result);
-    }
-
-    @GetMapping("/get")
-    public ResultData<String> getPayById(Integer id){
-        return ResultData.success("success" + payService.getById(id));
-    }
-
-    @GetMapping("/list")
-    public ResultData<String> getAll(){
-        return ResultData.success("success" + payService.getAll());
+    @GetMapping(value = "/get/{id}")
+    public Pay getById(@PathVariable("id") Integer id){
+        return payService.getById(id);
     }
 
 

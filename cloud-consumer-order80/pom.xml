@@ -19,6 +19,11 @@
     </properties>
 
     <dependencies>
+        <!--SpringCloud consul discovery -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
         <!--本地jar包-->
         <dependency>
             <groupId>org.example</groupId>
