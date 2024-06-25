@@ -1,0 +1,40 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-openFeign-order
+  ####Spring Cloud Consul for Service Discovery
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    openfeign:
+      client:
+        default-config:
+          # 连接超时时间
+          conenctTimeout: 3000
+          # 请求处理超时时间
+          readTimeout: 3000
+    httpclient:
+    hc5:
+      enabled: true
+        #cloud-payment-service:
+      #connectTimeout: 4000 #连接超时时间
+      #readTimeout: 4000 #读取超时时间
+    compression:
+      request:
+        enabled: true
+        min-request-size: 2048 #最小触发压缩的大小
+        mime-types: text/xml,application/xml,application/json #触发压缩数据类型
+      response:
+        enabled: true
+
+# feign日志以什么级别监控哪个接口
+logging:
+  level:
+    com:
+      atguigu:
+        cloud:
+          apis:
+            PayFeignApi: debug

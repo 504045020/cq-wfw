@@ -1,7 +1,5 @@
 server:
   port: 8001
-  servlet:
-    context-path: /provider
 
 # ============================= 应用名称 + mysql配置==================================================
 spring:
@@ -18,13 +16,9 @@ spring:
     password: chenQi@2024
   ####Spring Cloud Consul for Service Discovery
   cloud:
-    consul:
-      host: localhost
-      port: 8500
+    nacos:
       discovery:
-        heartbeat:
-          enabled: true
-        service-name: ${spring.application.name}
+        server-addr: localhost:8848
 # ============================= mybatis配置 ==================================================
 mybatis:
   mapper-locations: classpath:mapper/*.xml

@@ -38,7 +38,7 @@ public class PayController {
 
     @GetMapping(value = "/get/{id}")
     public Pay getById(@PathVariable("id") Integer id){
-        System.out.println("I am 8001");
+        System.out.println("I am 8002");
         return payService.getById(id);
     }
 
