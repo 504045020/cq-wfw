@@ -4,6 +4,7 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/Cloud-provider-payment8001/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/cloud-sentinel-service8401/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -11,10 +12,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-sentinel-service8401" />
         <module name="cloud-api-commons" />
         <module name="Cloud-provider-payment8001" />
-        <module name="Mybatis_Generator2024" />
         <module name="cloudalibaba-config-nacos3377" />
+        <module name="Mybatis_Generator2024" />
         <module name="cloud-gateway9527" />
         <module name="Cloud-provider-payment8002" />
         <module name="cloud-consumer-feign-order80" />
