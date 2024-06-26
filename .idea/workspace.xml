@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a97a42-832d-47fd-bdfa-7150c1a7b2a8" name="更改" comment="微服务">
-      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/MainSentinel8401.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/controller/FlowLimitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/service/FlowLimitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/service/impl/FlowLimitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/controller/HotKeyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/controller/RateLimitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-config-nacos3377/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos3377/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-config-nacos3377/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos3377/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/controller/FlowLimitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/controller/FlowLimitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/service/impl/FlowLimitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/service/impl/FlowLimitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-sentinel-service8401/target/classes/com/atguigu/cloud/controller/FlowLimitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-sentinel-service8401/target/classes/com/atguigu/cloud/controller/FlowLimitController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/cloud-gateway9527/pom.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/cloud-sentinel-service8401/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/cloud-sentinel-service8401/src/main/java/com/atguigu/cloud/controller/RateLimitController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/cloudalibaba-config-nacos3377/src/main/resources/bootstrap.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
   </component>
@@ -232,7 +227,7 @@
       <updated>1718851688155</updated>
       <workItem from="1718851689133" duration="22888000" />
       <workItem from="1719187836803" duration="33958000" />
-      <workItem from="1719367887877" duration="8328000" />
+      <workItem from="1719367887877" duration="13741000" />
     </task>
     <task id="LOCAL-00001" summary="微服务项目">
       <option name="closed" value="true" />
@@ -306,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719306548091</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="微服务">
+      <option name="closed" value="true" />
+      <created>1719386197517</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719386197517</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -6,9 +6,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FlowLimitServiceImpl implements FlowLimitService {
+
     @Override
     @SentinelResource(value = "common")
     public void common() {
         System.out.println("-----FlowLimit come in----");
     }
+
 }

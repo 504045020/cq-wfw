@@ -38,5 +38,10 @@ public class FlowLimitController {
         return "排队等待"+System.currentTimeMillis();
     }
 
+    @GetMapping("/f")
+    public String testF() throws InterruptedException {
+        Thread.sleep(1000);
+        return "Successful"+System.currentTimeMillis();
+    }
 
 }
